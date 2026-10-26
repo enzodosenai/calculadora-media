@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚Calculadora de Médias</h1>
+        <p class="subtitulo">Sistema de notas dos alunos</p>
+
+        <div id="formulario">
+
+            <label>Nome do aluno:</label>
+            <input type="text" id="nome"
+            placeholder="Digite o nome do aluno" required>
+
+            <label>Nome da Disciplina</label>
+            <select id="disciplina" required>
+                <option value="">Selecione a disciplina</option>
+                <option value="FDD">Fundamentos do Design Digital</option>
+                <option value="FTDI">Fotografia Digital</option>
+                <option value="PRAAI">Projetos de Àudio e Vídeo 1</option>
+            </select>
+
+            <div class="notas">
+                <div>
+                <label>1ºBimestre</label>
+                <input type="text" id="nota1"
+                placeholder="Digite a nota" required>
+                </div>
+                <div>
+                <label>2ºBimestre</label>
+                <input type="text" id="nota2"
+                placeholder="Digite a nota" required>
+                </div>
+
+                <div>
+                <label>3ºBimestre</label>
+                <input type="text" id="nota3"
+                placeholder="Digite a nota" required>
+                </div>
+
+                <div>
+                <label>4ºBimestre</label>
+                <input type="text" id="nota4"
+                placeholder="Digite a nota" required>
+                </div>
+
+            </div>
+
+            <button id="calcular" onclick="calcularMedia()">
+                Calcular Média
+            </button>
+
+            <button id="novocalculo" onclick="calcularNovo()">
+                Calcular Novamente
+            </button>
+
+            <a href=" " id="link" >Calculadora Normal</a>
+
+
+        </div>
+
+        <div id="resultado" class="resultado">
+            <p>Preencha os dados acima e clique em calcular média</p>
+        </div>
+
+    </div>
+
+
+<script src="../js/calcular-media.js"></script>
+</body>
+</html>
